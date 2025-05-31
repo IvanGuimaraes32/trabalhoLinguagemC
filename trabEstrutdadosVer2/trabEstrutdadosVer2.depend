@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1748720179 source:c:\users\trd_f\onedrive\documentos\tads semestre 3\trabestrutdadosver2\main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+

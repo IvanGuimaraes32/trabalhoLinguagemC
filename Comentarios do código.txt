@@ -1,0 +1,11 @@
+Vamos falar sobre as principais definições e estruturas do sistema. 
+Para facilitar os ajustes, definimos algumas constantes como MAX.ALUNOS (10), NUM.NOTAS (3), TAM.NOME (100) e MEDIA.APROVACAO (7.0f).
+A estrutura Aluno é o núcleo do sistema, guardando nome, matrícula, as três notas e a média de cada aluno.
+Quanto às funções principais: a main() organiza o fluxo, chamando o cadastro, depois os cálculos de média e, se houver alunos cadastrados, exibe o relatório.
+A função limparBufferEntrada() foi incluída para evitar problemas na leitura de dados após uso do scanf, limpando o buffer do teclado.
+A cadastrarAlunos() coleta as informações dos estudantes, verificando se a quantidade de alunos é válida, ou seja, está entre 1 e 10. Para cada aluno, ela solicita nome, matrícula e notas, com algumas travas para o usuário final não estragar nosso banco de dados: a matrícula deve ser um número inteiro e as notas, números float entre 0.0 e 10.0, insistindo até receber uma entrada válida. 
+A calcularMedias() passa por todos os alunos cadastrados e calcula a média das notas.
+O calcularMediaTurma() soma as médias individuais e divide pelo número de alunos para obter a média da turma, e ainda retorna zero se não houver alunos.
+A exibirDadosAluno() é uma função auxiliar, incluída para facilitar a visualização pelo usuário e apresenta os dados de cada aluno, incluindo nome, matrícula, notas e média.
+Já a exibirEstatisticasTurma() calcula e mostra as estatísticas solicitadas, como a maior e a menor média, indicando os alunos correspondentes, além da média total da turma e a quantidade de alunos aprovados.
+E para finalizar temos a função a exibirRelatorio() para organizar a exibição final, mostrando os detalhes de cada aluno e, depois, as estatísticas da turma, resumindo o desempenho geral.
